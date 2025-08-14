@@ -38,18 +38,6 @@ public:
     void setTrainNumber(int train_number) { trainNumber = train_number; }
     int getTrainNumber(void) { return trainNumber; }
 
-    void setTrainName(char *train_name) { strcpy(trainName, train_name); }
-    char *getTrainName(void) { return trainName; }
-
-    void setTrainSource(char *train_source) { strcpy(source, train_source); }
-    char *getTrainSource(void) { return source; }
-
-    void setTrainDestination(char *train_destination) { strcpy(destination, train_destination); }
-    char *getTrainDestination(void) { return destination; }
-
-    void setTrainTime(char *train_time) { strcpy(trainTime, train_time); }
-    char *getTrainTime(void) { return trainTime; }
-
     void inputTrainDetails()
     {
         cout << endl
@@ -130,7 +118,6 @@ int main()
 {
     RailwaySystem r;
     int train_number;
-    int input_detail_choice;
     int input_size;
     int choice;
     do
